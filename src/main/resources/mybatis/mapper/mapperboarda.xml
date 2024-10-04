@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper	
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.team.project.dao.DAO">
+
+
+
+	<!-- 업로드 -->
+	<insert id="mtdUploadWriter" parameterType="HashMap">
+		insert into
+		${titleTbl} (title, episode,writer, content, day, oriName, sysName,
+		realPath)
+		values (
+		#{title}, #{episode},#{writer}, #{content}, #{day},
+		#{oriName}, #{sysName},
+		#{realPath}
+		)
+	</insert>
+
+	<insert id="mtdUploadCommTbl" parameterType="HashMap">
+		create table
+		${title}${episode}CommTbl
+		(
+		num int ,
+		seq int unique auto_increment ,
+		comment
+		char(250),
+		memID char(20),
+		starCnt int default "0",
+		regTM timestamp default
+		now()
+		);
+	</insert>
+
+	<!-- webtoonList 출력 -->
+	<select id="mtdWebtoonList"
+		resultType="com.team.project.dto.DTO">
+		select
+		num,title,writer,episode,starCnt,date_format(regTM,'%y.%m.%d')as
+		regTM,sysName,day,realPath from ${title}tbl order by num desc;
+	</select>
+
+	<!-- webtoonList 별점 출력 -->
+	<select id="mtdWebtoonListAVG" resultType="_Double">
+		select
+		format(avg(starCnt),2) from ${param1}${param2}commtbl;
+	</select>
+	<update id="mtdWebtoonListAVGUp" parameterType="HashMap">
+		update
+		${param1}tbl set starCnt = ${param2} where num = ${param3};
+	</update>
+
+	<!-- webtoonVeiw 출력 -->
+	<select id="mtdWebtoonView"
+		resultType="com.team.project.dto.DTO">
+		select * from ${param1}tbl where num = ${param2};
+	</select>
+
+	<!-- 첫화 보기 -->
+	<select id="mtdWebtoonViewFirst"
+		resultType="com.team.project.dto.DTO">
+		select * from ${param1}tbl where num = 1;
+	</select>
+
+	<!-- 댓글 리스트 -->
+	<select id="mtdReviewList" resultType="com.team.project.dto.DTO">
+		select * from
+		${param1}${param2}Commtbl order by seq desc;
+	</select>
+
+	<!-- 댓글 개수 -->
+	<select id="mtdReviewCnt" resultType="_int">
+		select count(*) from
+		${param1}${param2}Commtbl;
+	</select>
+
+	<!-- 댓글 저장 -->
+	<insert id="mtdReview" parameterType="java.util.HashMap">
+		insert into
+		${item4}${item5}commtbl (comment, starCnt, memID, num)
+		values(#{item1}, #{item2},#{item3},#{item6});
+	</insert>
+
+
+	<!-- 댓글 삭제 -->
+	<delete id="mtdReviewDle">
+		delete from ${param1}${param2}commtbl where num = ${param3}
+	</delete>
+	
+	<!-- 웹툰 회차 순서 -->
+	<select id="mtdEpCnt" resultType="com.team.project.dto.DTO">
+		select * from ${param1}tbl
+		where num between "${param2}"-2 and "${param3}"+2;
+	</select>
+		<!-- 웹툰 회차 순서 -->
+	<select id="mtdBefore" resultType="com.team.project.dto.DTO">
+		select * from ${param1}tbl
+		where num =${param2}-1;
+	</select>
+		<!-- 웹툰 회차 순서 -->
+	<select id="mtdNext" resultType="com.team.project.dto.DTO">
+		select * from ${param1}tbl
+		where num =${param2}+1;
+	</select>
+
+	<!-- 신규 웹툰 영역 -->
+	<select id="mtdWebtoon" resultType="com.team.project.dto.DTO">
+		select * from toonAll order
+		by num desc limit 3;
+	</select>
+	<!-- 요일별 웹툰 -->
+	<select id="mtdWebtoonMon"
+		resultType="com.team.project.dto.MonDTO">
+		select * from toonAll where dayTM='mon' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonTue"
+		resultType="com.team.project.dto.TueDTO">
+		select * from toonAll where dayTM='tue' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonWed"
+		resultType="com.team.project.dto.WedDTO">
+		select * from toonAll where dayTM='wed' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonThu"
+		resultType="com.team.project.dto.ThuDTO">
+		select * from toonAll where dayTM='thu' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonFri"
+		resultType="com.team.project.dto.FriDTO">
+		select * from toonAll where dayTM='fri' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonSat"
+		resultType="com.team.project.dto.SatDTO">
+		select * from toonAll where dayTM='sat' order by num desc;
+	</select>
+
+	<select id="mtdWebtoonSun"
+		resultType="com.team.project.dto.SunDTO">
+		select * from toonAll where dayTM='sun' order by num desc;
+	</select>
+	<!-- 요일별 웹툰 끝 -->
+
+
+	<!-- 월요일 웹툰 -->
+	<select id="mtdWebtoonMonRecom"
+		resultType="com.team.project.dto.MonDTO">
+		select * from toonAll where dayTM='mon' order by num desc
+		limit 3;
+	</select>
+	<!-- 월요일 웹툰 -->
+
+	<!-- 화요일 웹툰 -->
+	<select id="mtdWebtoonTueRecom"
+		resultType="com.team.project.dto.TueDTO">
+		select * from toonAll where dayTM='tue' order by num desc
+		limit 3;
+	</select>
+	<!-- 화요일 웹툰 -->
+
+	<!-- 수요일 웹툰 -->
+	<select id="mtdWebtoonWedRecom"
+		resultType="com.team.project.dto.WedDTO">
+		select * from toonAll where dayTM='wed' order by num desc
+		limit 3;
+	</select>
+	<!-- 수요일 웹툰 -->
+
+	<!-- 목요일 웹툰 -->
+	<select id="mtdWebtoonThuRecom"
+		resultType="com.team.project.dto.ThuDTO">
+		select * from toonAll where dayTM='thu' order by num desc
+		limit 3;
+	</select>
+	<!-- 목요일 웹툰 -->
+
+	<!-- 금요일 웹툰 -->
+	<select id="mtdWebtoonFriRecom"
+		resultType="com.team.project.dto.FriDTO">
+		select * from toonAll where dayTM='fri' order by num desc
+		limit 3;
+	</select>
+	<!-- 금요일 웹툰 -->
+
+	<!-- 토요일 웹툰 -->
+	<select id="mtdWebtoonSatRecom"
+		resultType="com.team.project.dto.SatDTO">
+		select * from toonAll where dayTM='sat' order by num desc
+		limit 3;
+	</select>
+	<!-- 토요일 웹툰 -->
+
+	<!-- 일요일 웹툰 -->
+	<select id="mtdWebtoonSunRecom"
+		resultType="com.team.project.dto.MonDTO">
+		select * from toonAll where dayTM='sun' order by num desc
+		limit 3;
+	</select>
+	<!-- 일요일 웹툰 -->
+
+
+	<select id="mtdToonMain" resultType="com.team.project.dto.DTO">
+		select * from toonAll where
+		title = '${title}';
+	</select>
+
+	<!-- 신규 웹툰 업로드 -->
+	<insert id="mtdToonUp" parameterType="HashMap">
+		insert into toonAll (title,
+		writer, content, oriFile, systemFile, dayTM,
+		FilePath )
+		values (
+		#{title}, #{writer}, #{content},
+		#{oriName},#{sysName},#{day},#{realPath} );
+
+	</insert>
+	<insert id="mtdToonUpTbl" parameterType="HashMap">
+		create table ${title}Tbl
+		(
+		num int unique auto_increment ,
+		title char(20) ,
+		episode char(20) ,
+		writer char(20) ,
+		content char(20) ,
+		regTM timestamp default now() ,
+		viewCnt int default "0" ,
+		goodCnt int default "0" ,
+		starCnt double
+		default
+		"0" ,
+		thumOriName char(30) ,
+		thumsysName char(30) ,
+		thumrealPath
+		char(30)
+		,
+		OriName char(30) ,
+		sysName char(30) ,
+		realPath char(100) ,
+		fSize int,
+		day char(3),
+		constraint foreign key(title)
+		references
+		toonall(title));
+	</insert>
+
+	<!-- 타이틀 중복검사 -->
+	<select id="mtdTitleChk" resultType="_boolean"> select count(*) from
+		toonAll where title = #{param1};
+	</select>
+
+
+	<!-- 로그인 처리 -->
+	<select id="mtdLogin" resultType="_int">
+		select count(*) from member
+		where memID=#{param1} and memPW=#{param2};
+	</select>
+
+	<!-- 아이디 중복 체크 -->
+	<select id="mtdDupChk" resultType="_boolean">
+		select count(*) from member
+		where memID=#{param1};
+	</select>
+
+	<!-- 회원가입 처리 -->
+	<insert id="mtdJoin" parameterType="java.util.HashMap">
+		insert into member
+		(memID,
+		memPW, email, uname, birth, agency, gender, region, phone)
+		values
+		(#{memID}, #{memPW}, #{email}, #{uname}, #{birth},
+		#{agency},
+		#{gender}, #{region}, #{phone});
+	</insert>
+
+	<!-- 회원가입 시 관심웹툰 목록 Tbl 생성 -->
+	<insert id="mtdFavTbl" parameterType="java.util.HashMap">
+		create table ${memID}FavTbl
+		(
+		num int unique auto_increment ,
+		title char(20) primary key,
+		writer
+		char(15) ,
+		imgName char(100) ,
+		updateTM timestamp default now()
+		);
+	</insert>
+
+	<!-- 관심목록 추가 -->
+	<insert id="mtdFavProc" parameterType="java.util.HashMap">
+		insert into
+		${param1}FavTbl (title,writer,imgName) values
+		('${title}','${param3}','${param4}');
+	</insert>
+
+	<!-- 마이페이지 관심목록 -->
+	<select id="mtdMypageFav" resultType="com.team.project.dto.DTO">
+		select
+		num,title,writer,imgName,date_format(updateTM,'%y.%m.%d') as updateTM
+		from
+		${param1}favtbl order by num desc limit 7;
+	</select>
+
+	<!-- 웹툰 리스트 관심 -->
+	<select id="mtdWebtoonFav" resultType="_int">
+		select count(*) from
+		${param1}favtbl where title='${param2}';
+	</select>
+
+	<delete id="mtdFavREProc">
+		delete from ${param1}favtbl where title ='${param2}';
+	</delete>
+
+	<!-- 내정보 확인 -->
+	<select id="mtdMyInfo"
+		resultType="com.team.project.dto.MemberDto">
+		select * from member where memID=#{param1};
+	</select>
+
+	<!-- 내정보 수정하기 -->
+	<update id="mtdMod" parameterType="java.util.HashMap">
+		update member set
+		uname=#{uname}, email=#{email}, birth=#{birth},
+		gender=#{gender},
+		region=#{region}, agency=#{agency}, phone=#{phone}
+		where memID=#{memID};
+	</update>
+
+	<!-- 내정보에서 비밀번호 확인 및 수정하기 -->
+	<select id="mtdPWChk" resultType="_boolean">
+		select memPW=#{param1} from
+		member where memID=#{param2};
+	</select>
+	<update id="mtdPWMod">
+		update member set memPW=#{param1} where
+		memID=#{param2};
+	</update>
+
+	<!-- 회원탈퇴하기 -->
+	<delete id="mtdDel">
+		delete from member where memID=#{param1};
+	</delete>
+
+	<!-- 회원탈퇴 시 관심웹툰 목록 Tbl 삭제 -->
+	<insert id="mtdDelFavTbl">
+		drop table ${memID}FavTbl;
+	</insert>
+		<insert id="mtdnoticeWrite" parameterType="HashMap">
+		insert into ContentsList 
+		(contents, title, substance)
+		values
+		(#{contents}, #{title}, #{substance})
+
+	</insert>
+	
+
+	<select id="mtdnoticeList"
+	resultType="com.team.project.dto.DTO">
+	select contents, title, substance, seq, date_format(writeday, '%y.%m.%d') as
+	 writeday from ContentsList order by seq desc;
+	</select>
+	
+	<select id="mtdnoticeclick" resultType="com.team.project.dto.DTO">
+	select * from ContentsList where seq=${seq};
+	</select>
+	
+	<select id="mtdnoticetrd" resultType="com.team.project.dto.DTO">
+	select contents, title, substance, seq, date_format(writeday, '%y.%m.%d') as
+	 writeday from ContentsList where seq between ${seq}-1 and ${seq}+1 limit 3;
+	
+	</select>
+	
+	<select id="mtdnoticepage" resultType="com.team.project.dto.DTO">
+	select * from ContentsList order by seq desc;
+	</select>
+</mapper>
+		
+		
+		

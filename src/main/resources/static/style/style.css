@@ -1,0 +1,4082 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+div#wrap {
+    width: 1220px;
+    padding: 10px;
+    
+    border-radius: 4px;
+    margin: 10px auto;
+}
+.imgOver {
+	overflow: hidden;
+}
+.dayOfWeekColor {
+	background-color: #ccf8e0;
+}
+.dayOfWeekTab {
+	background-color: #00dc64;
+	color: #fff;
+}
+.position {
+	position: absolute;
+	
+}
+.Hr1 {
+	left: 0;
+	top: 75px;
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+.Hr2 {
+	left: 0;
+	top: 125px;
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+.Hr3 {
+	left: 0;
+	top: 185px;
+	width: 100%;
+	border-top: 1px solid #ddd;
+}
+/*****************    헤더 영역     ***************/
+#header {
+	width: 100%;
+}
+
+
+div#topLeft {
+	justify-content: space-between;
+}
+div#topLeft>div>a {
+	display: inline-block;
+}
+div#topLeft>div>a>img {
+	width: 40px;
+	height: 40px;
+	transform: translate(0px,-15px);
+}
+
+div#topLeft>div>h1{
+	display: inline-block;
+	font-size: 30px;
+	margin-bottom: 10px;
+	width: 110px;
+	height: 30px;	
+/* 	border: 1px solid #08f; */
+}
+div#topLeft>div#LogInOut>button {
+	padding: 5px 10px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+div#topLeft>div#LogInOut>button:hover {
+	cursor: pointer;
+}
+
+/* logo End */
+
+
+
+/* gnb Strat */
+
+
+div#gnbWid>a>span{
+	display: inline-block;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+
+/* gnb End */
+
+/*****************    헤더 영역 끝   *****************/
+
+/*****************    메인 페이지 영역      ****************/
+
+nav.dFlex {
+	justify-content: space-between;
+	margin-top: 10px;
+}
+span.tuesdaywebtoon {
+	font-size: 15px;
+	margin-top: 5px;
+	color: #aaa;
+	cursor: pointer;
+}
+nav>ul>li {
+	display: inline-block;
+	color: #aaa;
+ /* gnb 시작 */	
+}
+li#인기순 {
+	cursor: pointer;
+}
+li#업데이트순 {
+	cursor: pointer;
+}
+li#업데이트순.clicked {
+	color: #00ff00;
+}
+li#인기순.clicked {
+	color: #00ff00;
+}
+li#조회순 {
+	cursor: pointer;
+}
+li#조회순.clicked {
+	color: #00ff00;
+}
+li#별점순 {
+	cursor: pointer;
+}
+li#별점순.clicked {
+	color: #00ff00;
+}
+
+
+
+li.bold {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	padding-right: 10px;
+/* gnb 종료 */
+
+/* 메인 탑 이미지 작업  */
+}
+img {
+	cursor: pointer;
+}
+
+main.dFlex>div.MainTop1>h4 {
+	padding:  5px;
+}
+main.dFlex>div.MainTop1>p {
+	font-size: 14px;
+	padding: 1px;
+}
+
+div.MainTop1 {
+	margin-left: -8px;
+	margin-top: 15px;
+	padding: 8px;
+	padding-right: 6px;
+}
+
+
+/* 이미지 작업 완료  */
+/* 메인 탑 종료 */
+/* 이달의 신작 */
+div#container {
+	display: flex;
+}
+
+div.one {
+    justify-content: space-between;
+   
+}
+div.one>h2 {
+	margin-bottom: 12px;
+}
+
+div.one>span {
+    color: #747774;
+    margin-right: 12px;
+}
+
+div#img1 span#one {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div#img1 span#two {
+    color: #747774;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+div#img1 a {
+    background-color: #ddd;
+    border-radius: 3px;
+}
+#two>div>div.imgArea {
+	width: 270px;
+	height: 160px;
+	margin-right: 10px;
+}
+div#two span#two {
+	width: 270px;
+}
+
+
+/* 이달의 신작 종료 */
+
+/* 따끈따끈 업데이트+ */
+
+div.update1>span {
+	margin-right: 12px;
+}
+
+div.update1 {
+    justify-content: space-between;
+}
+
+div.update2 {
+    width: 160px;
+}
+
+div.imageArea {
+    width: 160px;
+    height: 200px;
+}
+div.imageArea img {
+	width: 160px;
+	height: 200px;
+}
+div.update1 {
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+div.update2 {
+	margin-right: 10px;
+}
+div.update2 span.one {
+	font-weight: bold;
+	font-size: 14px;
+}
+div.update2 p {
+	font-size: 14px;
+}
+/* 따끈따끈 업데이트+ 종료 */
+
+/* 실시간 인기 웹툰 */
+
+
+
+div.first {
+    justify-content: space-between;
+}
+
+div.first ul {
+    width: 130px;
+    
+}
+
+div.first ul li {
+	padding: 1px;
+    color: #aaa;
+    font-size: 14px;
+ 	margin: 0 2px;
+}
+
+
+div#livebest hr {
+    margin: 10px 0;
+}
+div.second {
+	margin-bottom: 10px;
+}
+
+div.second span {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+div.second>div.sil a {
+	font-weight: bold;
+	font-size: 13px;
+}
+div.second>div.sil p {
+	font-size: 11px;
+}
+
+div.imagArea {
+    width: 60px;
+    height: 80px;
+}
+div#livebest {
+	width: 330px;
+	margin-left: 1px;
+	display: inline-block;
+	
+}
+
+/* 실시간 인기 웹툰 종료*/
+/* 이달의 신작 따끈따끈 업데이트 매일+ 묶음  */
+div#container2 {
+	padding-right: 30px;
+}
+/* 이달의 신작 따끈따끈 업데이트 매일+ 묶음 종료  */
+/******************    메인 페이지 영역 끝   *****************/
+
+/*******************    푸터 영역      *****************/
+
+
+#footer {
+	
+    
+margin-top: 20px;
+    
+}
+
+div#footerwrap h2 {
+    margin-bottom: 30px;
+}
+
+div#shop {
+    margin-bottom: 50px;
+}
+
+div#shop span a {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 3px;
+    margin-right: 8px;
+    padding: 5px;
+}
+
+div#shop span {
+    font-size: 19px;
+    /* border: 1px solid #000; */
+}
+
+div#footerArticle {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#footerArticle img {
+    width: 380px;
+    height: 130px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+div#touchp {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+div#touch span a {
+    color: #aaa;
+    font-size: 17px;
+}
+
+div#footerwrap hr {
+    margin: 20px 0;
+}
+
+div#footp {
+    display: flex;
+}
+
+div#foot span {
+    color: #8b8d8b;
+    font-size: 15px;
+}
+
+div#foot1 span {
+    color: #8b8d8b;
+}
+
+div#foot1 {
+    margin-left: 50px;
+}
+
+div#foots {
+    margin-top: 30px;
+}
+
+div#foots span {
+    color: #8b8d8b;
+}
+
+div#footer span {
+    color: #8b8d8b;
+}
+
+div#footer {
+    margin-top: 30px;
+}
+/*********************    푸터 영역 끝   ****************/
+
+
+/********************    공지사항 영역    ****************/
+div#noticeWrap {
+	margin-top: 20px;
+	width: 300px;
+	
+}
+div#noticeWrap>#topArea {
+	font-size: 16px;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+div#noticeWrap>#topArea>span:hover {
+	cursor: pointer;
+	
+}
+
+div#noticeWrap>#mainArea {
+	padding: 0;
+}
+
+div#noticeWrap>#mainArea>ul>li {
+	cursor: pointer;
+	font-size: 13px;
+	padding: 4px 0;
+}
+/******************    공지사항 영역 끝   *****************/ 
+
+/****************** 웹툰 메인 페이지 시작 ******************/
+div#webtoonWrap {
+	width: 1220px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+#webtoonWrap>#gnb {
+	
+	display: inline-block;
+	
+}
+#gnb>#gnbDay {
+	margin: 0 5px;
+	height: 60px;
+	line-height: 60px;
+	
+}
+
+#gnb>#gnbDay>li:hover {
+	cursor: pointer;
+}
+#gnb>#gnbDay>li:not(li:first-child) {
+	padding: 0px 10px;
+	font-weight: bold;	
+}
+#gnb>#gnbDay>li:first-child {
+	font-weight: bold;
+/* 	color: #0d0;
+	border-bottom: 3px solid #0d0; */
+}
+#webtoonMain {
+	width: 900px;
+}
+#webtoonMainTop>h2 {
+	margin: 20px 0;
+}
+
+#webtoonMainTop>section#newWebtoon>article {
+	width: 270px;
+	height: 240px;
+	margin-right: 10px;
+}
+#webtoonMainTop>section#newWebtoon>article>a>h3 {
+	margin-top: 5px;
+	font-size: 17px;
+}
+#webtoonMainTop>section#newWebtoon>article>a>h4 {
+	margin-top: 5px;
+	font-size: 16px;
+}
+#webtoonMainTop>section#newWebtoon>article>a>span {
+	margin-top: 5px;
+	color: #555;
+	font-size: 14px;
+	display: inline-block;
+}
+#webtoonMainTop>section#newWebtoon>article>a.imgArea {
+	width: 270px;
+	height: 160px;
+	border-radius: 6px;
+}
+#webtoonMainTop>section#newWebtoon>article>a>.imgArea>img {
+	width: 270px;
+	height: 160px;
+}
+
+#webtoonMainTop>section#newWebtoon>article> * {
+
+	cursor: pointer;
+}
+/* 웹툰 메인 탑 끝 */
+/* 웹툰 요일별 전체 웹툰 시작 */
+#dayAllWebtoon {
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+#dayAllWebtoon>#dayAllHeader {
+	height: 40px;
+	line-height: 40px;
+}
+#dayAllWebtoon>#dayAllHeader>h2 {
+	margin-right: 20px;
+}
+#dayAllWebtoon>#dayAllHeader>ul{
+	flex:1;
+	
+}
+#dayAllWebtoon>#dayAllHeader>ul>li{
+	margin: 0 2px;
+	
+}
+#dayAllWebtoon>#dayAllHeader>ul>li:hover{
+	cursor: pointer;
+}
+#dayAllWebtoon>#dayAllHeader>ul>li:first-child {
+	color: #0d0;
+}
+
+
+
+div#mainWebtoon>ul {
+	
+	flex:1;
+	display: inline-block;
+	border: 1px solid #ddd; 
+	border-bottom: none;
+}
+div#mainWebtoon>ul:not(ul:first-child){
+	border-left: none;
+}
+
+div#mainWebtoon>ul>li {
+	text-align: center;	
+	padding: 0 5px;
+}
+div#mainWebtoon>ul>li:first-child {
+	
+	padding: 10px 0;	
+	margin-bottom: 15px;
+}
+
+div#mainWebtoon>ul>li>a>label {
+	width: 160px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+div#mainWebtoon>ul>li>a>label>.thumImg {
+	width: 160px;
+	height: 200px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+div#mainWebtoon>ul>li>a>label>.thumImg>img {
+	width: 160px;
+	height: 200px;
+}
+div#mainWebtoon>div>label>.thumImg>img {
+	width: 160px;
+	height: 200px;
+}
+
+div#mainWebtoon>ul>li>a>label>span {
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;	
+	display: inline-block;
+	width: 100%;
+}
+footer#dayWebtoon {
+	margin-top: 50px;
+	padding-left: 870px;
+	margin-bottom: 20px;
+}
+
+/************ 웹툰 메인 페이지 끝 ***************/
+
+/************ 요일 별 웹툰페이지 시작 ***************/
+#mondayWebtoon>label {
+	display: inline-block;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#mondayWebtoon>label>a>.thumImg {
+	width: 160px;
+	height: 200px;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+}
+/************ 요일 별 웹툰페이지 끝 ***************/
+
+/********************* 웹툰 뷰 **********************/
+div#webViewLeft{
+	width: 800px;
+/* 	border: 3px solid #08f; */
+margin-top: 20px;
+margin-right: 50px;
+	height: 1000px;
+}
+
+div#webViewLeft div#imgArea {
+	width: 190px;
+	height: 250px;
+	border: 1px solid #aaa;
+	border-radius: 10px;
+}
+div#webViewLeft div#imgArea>img{
+	width: 190px;
+	height: 250px;
+}
+
+div#rightArea{
+	padding: 2px;
+/* 	border: 3px solid #08f; */
+}
+
+div#textArea{
+	margin-left: 10px;
+}
+div#event{
+	border-radius: 6px;
+	border: 1px solid #aaa;
+	width: 305px;
+	height: 270px;
+/* 	margin-left: 600px; */
+}
+
+div#btnArea{
+	margin: 10px 0;
+	margin-bottom: 30px;
+}
+
+div#btnArea>button{
+border-radius: 6px;
+/* transform : translateY(-40px); */
+cursor: pointer;
+background-color: #ddd;
+border: 1px solid #bbb;
+font-weight: bold;
+}
+
+div#btnArea>button#FavBtn{
+	width: 40%;
+	height: 45px;
+	border: 1px solid #00dc64;
+	background-color: #00dc64;
+	color: #fff;	
+	display: none;
+}
+div#btnArea>button#FavBtnRE {
+	width: 40%;
+	height: 45px;
+	border: 1px solid #00dc64;
+	background-color: #fff;
+	color: #00dc64;	
+	display: none;
+}
+
+div#btnArea>button#firstView{
+	width: 40%;
+	height: 45px;	
+}
+
+div#btnArea>button#airDrop{
+	width: 18%;
+	height: 45px;	
+}
+
+div.numStory{
+	cursor: pointer;
+	margin: 10px 0;
+}
+
+div.numStory>hr{
+	margin: 10px 0;
+}
+
+div.numStory>img{
+	
+	width: 100px;
+	height: 60px;
+}
+
+div.numStory>div{
+	display: inline-block;
+}
+div.numStory>div>span {
+	color: #aaa;
+}
+
+/********************* 웹툰 뷰 **********************/
+
+
+
+/************ 마이 페이지 ***************/
+
+
+#mypageHeader>ul#mypageGNBul {
+	width: 225px;
+	height: 60px;
+	font-weight: bold;
+	padding-top: 18px;
+	justify-content: center;
+}
+
+#mypageHeader>ul#mypageGNBul>li {
+	padding: 0 8px;
+}
+#mypageHeader>ul#mypageGNBul>li:hover {
+	cursor: pointer;
+}
+
+
+/* 관심웹툰 */
+div#mypageFBWebtoon h2 {
+	padding: 10px;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+div#mypageTitle>p {
+	padding-top: 25px;
+	color: #808080;
+	padding-left: 15px;
+	font-size: 15px;
+}
+
+main#mypageMain {
+	width: 1200px;
+	margin-top: 10px;
+}
+
+div#mypageFBWebtoon {
+	width: 700px;
+	margin-right: 200px;
+	height: 1000px;
+}
+
+
+/* 이미지, 작품명, 업데이트일 시작*/
+ul#mypageMainUl {
+	justify-content: space-between;
+	
+}
+
+ul#mypageMainUl>li {
+	padding: 15px;
+	font-size: 20px;	
+}
+
+ul#mypageMainUl>li:nth-child(1) {
+	margin-left: 15px;
+}
+
+ul#mypageMainUl>li:nth-child(3) {
+	margin-right: 15px;
+}
+/* 이미지, 작품명, 업데이트일 끝 */
+
+
+/* 웹툰 리스트 시작 */
+div.mypageContent {
+	padding: 10px;
+	justify-content: space-between;
+	border-bottom: 2px solid #aaa;
+}
+
+div.mypageContent>img {
+	width: 120px;
+	height: 100px;
+	border-radius: 5px;
+}
+
+div.mypageContent>span.mypageTW {
+	margin-right: 190px;
+	margin-top: 22px;
+}
+
+div.mypageContent>span.mypageTW>span.mypageTitle {
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+div.mypageContent>span.mypageTW>span.mypageWriter {
+	font-size: 17px;
+}
+
+div.mypageContent>span.mypageDate {
+	margin-right: 30px;
+	margin-top: 33px;
+}
+
+/* 웹툰 리스트 끝 */
+
+/******************** 마이 페이지 끝  *********************/
+
+/************************ 로그인 시작 ********************/
+/* 로그인 시작 */
+div#wrap.login {
+    width: 520px;
+    padding: 20px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+div#wrap.login header#header {
+	text-align: center;
+	margin: 50px 0;
+}
+div#wrap.login header#header>a>img {
+	width: 80px;
+	height: 80px;
+}
+
+
+/* nav#loginGnb 시작 */
+div#wrap.login main#loginMain nav#loginGnb ul#loginMainMenu li.mainLi {
+	width: 162px;
+	font-size: 17px;
+	text-align: center;
+	padding: 10px 20px 12px;
+	display: inline-block;
+	position: relative;
+}
+
+div#wrap.login li.mainLi:nth-child(1) {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: none;
+	z-index: 1;
+}
+
+div#wrap.login li.mainLi:nth-child(2) {
+	background-color: #eee;
+	margin-left: -5px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom-left-radius: 10px;
+}
+
+div#wrap.login li.mainLi:nth-child(2)>a {
+	color: #888;
+}
+
+div#wrap.login li.mainLi:nth-child(3) {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	border-top-right-radius: 10px;
+}
+
+div#wrap.login li.mainLi:nth-child(3)>a {
+	color: #888;
+}
+/* nav#loginGnb 끝 */
+
+/* 로그인 form 시작 */
+div#wrap.login main#loginMain form {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#wrap.login div#loginForm {
+	margin: 15px auto;
+}
+
+div#wrap.login div#loginForm input {
+	font-size: 17px;
+	padding: 15px 20px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+/* 아이디, 비밀번호 내용 삭제 아이콘 시작 */
+div#uidInsArea, div#upwInsArea {
+	width: 94%;
+	position: relative;
+	margin: 0 auto;
+}
+
+span#uidCloseIcon, span#upwCloseIcon {
+	width: 18px;
+	height: 18px;
+	line-height: 13px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	background-color: #999;
+	border-radius: 50%;
+	display: inline-block;
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	cursor: pointer;
+}
+/* 아이디, 비밀번호 내용 삭제 아이콘 끝 */
+
+
+div#wrap.login div#loginForm input[type=text] {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: none;
+}
+
+div#wrap.login div#loginForm input[type=password] {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#wrap.login div#loginMgrArea {
+	margin: 10px;
+	justify-content: space-between;
+}
+
+div#wrap.login div#loginMgrArea label:hover {
+	cursor: pointer;
+}
+
+div#wrap.login div#loginMgrArea label img {
+	vertical-align: middle;
+}
+
+div#wrap.login div#loginMgrArea label span {
+	color: #888;
+	font-size: 14px;
+	margin-top: 4px;
+	display: inline-block;
+}
+
+div#ipSecurity img {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+div.alertMsg {
+	font-size: 13px;
+	color: #f00;
+	margin: 15px 15px 25px;
+	display: none;
+}
+
+div.alertMsg span {
+	font-size: 13px;
+	color: #f00;
+	font-weight: bold;
+}
+
+div#wrap.login div#btnArea {
+	margin: 18px auto 10px;
+}
+
+div#wrap.login div#btnArea button {
+	font-size: 17px;
+	padding: 14px;
+	display: block;
+	width: 94%;
+	margin: 0 auto;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+/* 로그인 form 끝 */
+
+/* nav#loginLnb 시작 */
+div#wrap.login nav#loginLnb {
+	margin: 20px auto 50px;
+}
+
+div#wrap.login nav#loginLnb ul#loginLnbMenu {
+	justify-content: center;
+}
+
+div#wrap.login nav#loginLnb ul#loginLnbMenu li.loginLnbLi {
+	color: #ccc;
+	margin: 0 10px;
+}
+
+div#wrap.login li.loginLnbLi>a {
+	color: #777;
+	font-size: 14px;
+	width: 90px;
+}
+/* nav#loginLnb 끝 */
+
+/* div#loginAddArea 시작 */
+div#wrap.login div#loginAddArea img {
+	margin: 10px auto;
+	width: 100%;
+}
+/* div#loginAddArea 끝 */
+
+/* footer#footer 시작 */
+div#wrap.login footer#footer {
+	margin-top: 30px;
+}
+
+div#wrap.login nav#footerLnb {
+	margin: 10px auto;
+}
+
+div#wrap.login nav#footerLnb  ul#footerLnbMenu {
+	justify-content: center;
+}
+
+div#wrap.login nav#footerLnb  ul#footerLnbMenu li.footerLnbLi {
+	color: #ccc;
+	margin: 0 3px;
+}
+
+div#wrap.login li.footerLnbLi>a {
+	color: #777;
+	font-size: 12px;
+	width: 90px;
+}
+
+div#wrap.login li.footerLnbLi:nth-child(3)>a {
+	font-weight: bold;
+}
+
+div#wrap.login div#footerCopy {
+	justify-content: center;
+}
+
+div#wrap.login div#footerCopy img {
+	width: 20px;
+	height: 20px;
+	transform: translateY(0px);
+}
+
+div#wrap.login div#footerCopy span:nth-child(2) {
+	color: #888;
+	font-size: 12px;
+	margin-left: 3px;
+}
+
+div#wrap.login div#footerCopy span:nth-child(3) {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+div#wrap.login div#footerCopy span:nth-child(4) {
+	color: #888;
+	font-size: 12px;
+	margin-left: 3px;
+}
+/* footer#footer 끝 */
+/* 로그인 끝 */
+
+
+
+
+/* 회원가입 동의페이지 시작 */
+div#wrap.joinAgree {
+    width: 540px;
+    padding: 10px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 0 auto 100px;
+}
+
+div#wrap.joinAgree header#header {
+	margin-bottom: 30px;
+}
+div#wrap.joinAgree header#header>a>img {
+	width: 50px;
+	height: 50px;
+}
+
+/* div#wrap.joinAgree main#main 시작 */
+div#wrap.joinAgree label:hover {
+	cursor: pointer;	
+}
+
+div#wrap.joinAgree input.chkAgree {
+	width: 25px;
+	height: 25px;
+	accent-color: #09aa5c;
+	transform: translateY(5px);
+}
+
+div#wrap.joinAgree div#chkAllArea label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+div#wrap.joinAgree div#chkAllArea>span {
+	color: #666;
+	font-size: 15px;
+	display: block;
+	margin: 15px 35px;
+}
+
+div#wrap.joinAgree div.agreeDiv span.agrTitle {
+	font-weight: bold;
+}
+
+div#wrap.joinAgree div.agreeDiv span.grnNd {
+	font-weight: bold;
+	font-size: 14px;
+	color: #09aa5c;
+}
+
+div#wrap.joinAgree div.agreeDiv span.gryCho {
+	font-weight: bold;
+	font-size: 14px;
+	color: #666;
+}
+
+div#wrap.joinAgree div.agreeDiv iframe {
+	width: 85%;
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	margin: 15px 40px 25px;
+	overflow: hidden;
+}
+
+div#wrap.joinAgree label#joinEventAgr {
+	margin: 15px 35px;
+	display: block;
+}
+
+div#wrap.joinAgree label#joinEventAgr input {
+	accent-color: #09aa5c;
+	border: none;
+}
+
+div#wrap.joinAgree label#joinEventAgr span {
+	color: #666;
+	font-size: 15px;
+}
+
+div#wrap.joinAgree div#notAgrMsg {
+	font-size: 13px;
+	color: #f00;
+	margin: 15px 30px 25px;
+	display: none;
+}
+/* div#wrap.joinAgree main#main 끝 */
+
+footer#joinAgreeFooter {
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+footer#joinAgreeFooter button#chkNextGray {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 520px;
+	margin: 0 auto;
+	background-color: #8990a0;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+}
+
+footer#joinAgreeFooter button#chkNextGrn {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 520px;
+	margin: 0 auto;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+/* 회원가입 동의페이지 끝 */
+
+
+
+/* 아이디 중복체크 페이지 시작 */
+div#wrap.joinIdDupChk {
+	width: 400px;
+	padding: 10px;
+	border: 4px solid #09aa5c;
+	border-radius: 4px;
+	margin: 20px auto;
+}
+
+div#wrap.joinIdDupChk h1 {
+	color: #09aa5c;
+	text-align: center;
+}
+
+div#wrap.joinIdDupChk hr {
+	margin: 10px 0;
+}
+
+div#wrap.joinIdDupChk form#idChkForm input {
+	width: 95%;
+	font-size: 20px;
+	padding: 4px 10px;
+	margin: 12px auto;
+	display: block;
+}
+
+div#wrap.joinIdDupChk form#idChkForm p {
+	width: 95%;
+	padding: 4px 10px;
+	margin: 12px auto;
+}
+
+div#wrap.joinIdDupChk button#dupChkBtn {
+	color: #fff;
+	font-weight: bold;
+	background-color: #09aa5c;
+	border: 1px solid #09aa5c;
+	border-radius: 4px;
+	width: 95%;
+	font-size: 20px;
+	padding: 4px 10px;
+	margin: 12px auto;
+	display: block;
+}
+
+div#wrap.joinIdDupChk button#dupChkBtn:hover {
+	border-radius: 4px;
+	color: #09aa5c;
+	background-color: #fff;
+	border: 1px solid #09aa5c;
+	cursor: pointer;
+}
+
+div#wrap.joinIdDupChk div#chkResArea {
+	width: 95%;
+	height: 60px;
+	margin: 12px auto;
+}
+
+div#wrap.joinIdDupChk #chkResArea>p {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px;
+}
+
+div#wrap.joinIdDupChk #chkResArea>p#chkResErr {
+	color: #f00;
+	display: none;
+}
+
+div#wrap.joinIdDupChk div#popBtnArea {
+	text-align: center;
+}
+
+div#wrap.joinIdDupChk button#idUseBtn {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 4px 40px;
+	color: #fff;
+	background-color: #09aa5c;
+	border: 1px solid #09aa5c;
+	border-radius: 4px;
+}
+
+div#wrap.joinIdDupChk button#idUseBtn:hover {
+	border-radius: 4px;
+	color: #09aa5c;
+	background-color: #fff;
+	border: 1px solid #09aa5c;
+	cursor: pointer;
+}
+/* 아이디 중복체크 페이지 끝 */
+
+
+
+/* 회원가입 정보입력 페이지 시작 */
+div#wrap.joinBegin {
+    width: 540px;
+    padding: 10px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+div#wrap.joinBegin header#header {
+	margin-bottom: 40px;
+}
+div#wrap.joinBegin header#header>a>img {
+	width: 50px;
+	height: 50px;
+}
+
+/* form 영역 시작 */
+div#wrap.joinBegin #joinFormList {
+	margin: 10px;
+}
+
+div#wrap.joinBegin #joinItemUid {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUid img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUid input {
+	width: 60%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemUid button#idDupChkBtn {
+	padding: 0 10px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #09aa5c;
+	border: none;
+	border-radius: 6px;
+	margin-left: 10px;
+	width: 200px;
+}
+
+div#wrap.joinBegin #joinItemUid button#idDupChkBtn:hover {
+	color: #09aa5c;
+	background-color: #fff;
+	border: 1px solid #09aa5c;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemUpw {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUpw img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUpw input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemMail {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemMail img {
+	margin-right: 3px;
+}
+
+div#wrap.joinBegin #joinItemMail input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinFormIns {
+	margin: 15px 10px;
+}
+
+div#wrap.joinBegin #joinItemUname {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUname img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUname input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemBirth {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemBirth img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemBirth input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemAgency {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom {
+	width: 210px;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	background-color: #fff;
+	position: absolute;
+	flex-wrap: wrap;
+	top: 40px;
+	left: 60px;
+	display: flex;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom li.telecomLi {
+	width: 100px;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 6px;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom li.telecomLi label {
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom li.telecomLi input {
+	display: none;
+}
+
+div#wrap.joinBegin #joinItemAgency>img {
+	width: 33px;
+	margin: 0 8px;
+}
+
+div#wrap.joinBegin #joinItemAgency>input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+div#wrap.joinBegin #joinItemAgency span.wideIcon>img {
+	transform: translateY(8px);
+}
+
+div#wrap.joinBegin #joinItemAgency span.wideIcon {
+	width: 250px;
+	text-align: right;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemGenReg {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+	justify-content: space-between;
+}
+
+div#wrap.joinBegin #joinItemGenReg ul {
+	width: 230px;
+}
+
+div#wrap.joinBegin #joinItemGenReg li {
+	width: 50%;
+}
+
+div#wrap.joinBegin #joinItemGenReg label {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	padding: 4px 0;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemGenReg li:nth-child(1) label {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+div#wrap.joinBegin #joinItemGenReg li:nth-child(2) label {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+div#wrap.joinBegin #joinItemGenReg label.selected {
+	border: 1px solid #09aa5c;
+}
+
+div#wrap.joinBegin #joinItemGenReg label.selected span {
+	color: #09aa5c;
+}
+
+div#wrap.joinBegin #joinItemGenReg label span {
+	font-size: 14px;
+	color: #888;
+}
+
+div#wrap.joinBegin #joinItemGenReg input[type=radio] {
+	display: none;
+}
+
+div#wrap.joinBegin #joinItemPhone {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemPhone img {
+	width: 33px;
+	margin: 0 8px;
+}
+
+div#wrap.joinBegin #joinItemPhone input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div.errArea {
+	margin: 10px 15px;
+}
+
+div#wrap.joinBegin div.errArea ul.errMsg {
+	position: inside;	
+}
+
+div#wrap.joinBegin div.errArea li.errMsgLi {
+	color: #f00;
+	font-size: 13px;
+	list-style: disc inside;
+	margin: 3px;
+	display: none;
+}
+/* form 영역 끝 */
+
+/* div#agreeArea 시작 */
+div#wrap.joinBegin div#agreeArea {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 10px 10px 0;
+}
+
+div#wrap.joinBegin div#agrTitle {
+	margin-bottom: 15px;
+}
+
+div#wrap.joinBegin div#agrTitle label {
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#agrTitle input {
+	width: 25px;
+	height: 25px;
+	accent-color: #09aa5c;
+	transform: translateY(5px);
+}
+
+div#wrap.joinBegin div#agrTitle span#green {
+	color: #09aa5c;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+div#wrap.joinBegin div#agrTitle span#bold {
+	font-weight: bold;
+
+}
+
+div#wrap.joinBegin div#agrTitle span.wideIcon {
+	width: 52%;	
+	display: inline-block;
+	text-align: right;
+}
+
+div#wrap.joinBegin div#agrTitle span.wideIcon img {
+	transform: translateY(4px);
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#listArea {
+	border-top: 1px solid #ddd;
+	display: none;
+}
+
+div#wrap.joinBegin div#listArea ul#agreeMenu {
+	flex-wrap: wrap;
+	padding: 5px;
+	margin: 10px;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi {
+	width: 218px;
+	margin-bottom: 5px;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi label {
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi input {
+	margin-right: 5px;
+	accent-color: #09aa5c;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi span {
+	font-size: 14px;
+	color: #666;
+}
+div#wrap.joinBegin div.errArea p {
+	color: #f00;
+	font-size: 13px;
+	margin: 3px;
+	display: none;
+}
+/* div#agreeArea 끝 */
+
+footer#footer button#goJoinProc {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 496px;
+	margin: 30px auto 10px;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+/* 회원가입 정보입력 페이지 끝 */
+/* 회원가입 성공 페이지 시작 */
+div#wrap.joinSuccess {
+	width: 520px;
+    padding: 20px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+div#wrap.joinSuccess header#header {
+	text-align: center;
+	margin: 50px 0 30px;
+}
+div#wrap.joinSuccess header#header>a>img {
+	width: 80px;
+	height: 80px;
+}
+
+div#wrap.joinSuccess main#joinSucMain {
+	text-align: center;
+	padding: 20px;
+}
+
+div#wrap.joinSuccess main#joinSucMain div#welDiv img {
+	width: 220px;
+}
+
+div#wrap.joinSuccess main#joinSucMain div#welDiv h2 {
+	color: #888;
+	margin: 15px 0;
+}
+
+div#wrap.joinSuccess main#joinSucMain div#welDiv h1 {
+	color: #09aa5c;
+	margin-bottom: 20px;
+}
+
+div#wrap.joinSuccess div#joinSucBtnArea button#goMainBtn {
+	font-size: 20px;
+	padding: 14px;
+	width: 200px;
+	background-color: #888;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: 2px solid #888;
+	cursor: pointer;
+	margin: 5px;
+}
+
+div#wrap.joinSuccess div#joinSucBtnArea button#goMainBtn:hover {
+	color: #888;
+	border: 2px solid #888;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+div#wrap.joinSuccess div#joinSucBtnArea button#goUserLogin {
+	font-size: 20px;
+	padding: 14px;
+	width: 200px;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: 2px solid #09aa5c;
+	cursor: pointer;
+	margin: 5px;
+}
+
+div#wrap.joinSuccess div#joinSucBtnArea button#goUserLogin:hover {
+	color: #09aa5c;
+	border: 2px solid #09aa5c;
+	background-color: #fff;
+	border-radius: 10px;
+}
+/* 회원가입 성공 페이지 끝 */
+
+/******************* 로그인 끝 *****************/
+
+/******************* 검색 페이지 시작 *****************/
+
+div#wrapsearch {
+    width: 820px;
+    padding: 10px; 
+}
+
+div#wrapsearch h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div#wrapsearch ul {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div#wrapsearch ul>li>a {
+    width: 110px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+div#wrapsearch hr {
+    margin: 14px 0;
+}
+
+div.title {
+    display: flex;
+
+}
+
+div.title p {
+    font-size: 24px;
+}
+
+div.title span {
+    color: #aaa;
+    font-size: 17px;
+}
+
+div.imArea {
+    display: flex;
+    margin-top: 20px;
+}
+
+div.imArea div#impArea {
+    margin-left: 20px;
+}
+
+div.imArea img {
+    width: 120px;
+    height: 150px;
+}
+
+div.imArea div#impArea a {
+    background-color: #ddd;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+div.imArea div#impArea span {
+    font-size: 20px;
+}
+
+div.imArea div#impArea p {
+    font-size: 17px;
+}
+/******************* 검색 페이지 끝 *****************/
+
+/******************* 업로드 페이지 시작 *****************/
+div#uploadWrap {
+	width: 1200px;
+}
+div#uploadWrap>h1 {
+	margin: 20px;
+}
+div#uploadWrap>label {
+	display: block;
+	
+	border-bottom: 1px solid #aaa;
+	padding: 20px 0;
+}
+div#uploadWrap>label> * {
+	font-size: 20px;
+}
+div#uploadWrap>label>input {
+	padding: 5px;
+}
+div#uploadWrap>label>select {
+	padding: 5px;
+}
+div#uploadWrap>label>span {
+	width: 150px;
+	font-weight: bold;
+}
+div#uploadWrap>#uploadTag {
+	padding: 20px 0;
+}
+
+div#uploadWrap>#uploadTag> * {
+	font-size: 20px;
+}
+div#uploadWrap>#uploadTag>h4 {
+	width: 150px;
+	display:inline-block;
+	
+}
+
+div#uploadWrap>#uploadTag>span {
+	border-radius: 10px;
+	background-color: #ddd;
+	padding: 3px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+div#uploadWrap>#uploadTag>span.selTag {
+	background-color: #0f0;
+	color: #aaa;
+}
+
+div#uploadWrap>#btnArea {
+	margin-top: 20px;
+	text-align: center;
+}
+
+div#resultWrap p {
+	margin: 20px 0;	
+}
+div#resultWrap p>span {
+	width: 200px;
+	font-size: 20px;
+}
+div#resultWrap p>input {
+	font-size: 20px;
+	padding: 3px 10px;
+	width: 300px;
+}
+div#resultWrap button {
+	padding: 5px 20px;
+	font-size: 30px;
+}
+
+/* 업로드 중복 팝업 창 Strat */
+
+div#upPopWrap {
+	padding: 10px 6px;
+	margin: 20px auto;
+	width: 400px;
+	border: 2px solid #aaa;
+	border-radius: 6px;
+}
+
+#upPopWrap h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#upPopWrap hr {
+	margin: 10px 0;
+}
+
+div.btnArea {
+	text-align: center;
+}
+
+div.btnArea button {
+	font-size: 18px;
+	padding: 3px 10px;
+	cursor: pointer;
+}
+
+form#titleChk>* {
+	width: 95%;
+	padding: 4px 10px;
+	font-size: 20px;
+	margin: 11px auto;
+	display: block;
+}
+
+form#titleChk>button {
+	cursor: pointer;
+}
+
+div#chkResArea {
+	width: 95%;
+	height: 60px;
+	/* 	border: 1px solid #000; */
+	margin: 12px auto;
+}
+
+#chkResArea>p {
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+}
+
+/* 업로드 중복 팝업 창 End */
+
+/******************* 업로드 페이지 끝 *****************/
+
+
+/******************* 웹툰 뷰 페이지 시작 *****************/
+
+/* div#remocon 시작 */
+
+div#remocon {
+	padding: 15px;
+	background-color: #383b45;
+	border: 1px solid #000;
+}
+
+div#rmcLeft>span {
+	font-size: 20px;
+	color: #fff;
+}
+
+div#rmcLeft>span:nth-child(1) {
+	cursor: pointer;
+	font-size: 22px;
+}
+
+div#rmcRight {
+	margin-left: 60%;
+}
+
+div#rmcRight>ul {
+	color: #fff;
+	cursor: default;
+}
+
+div#rmcRight>ul>li {
+	color: #fff;
+	/* 	border: 1px solid #08f; */
+	display: inline-block;
+	cursor: pointer;
+}
+div#rmcRight>ul>li:nth-child(odd) {
+	width: 70px;
+	text-align: center;
+}
+div#rmcRight>ul>li:nth-child(3) {
+	width: 50px;
+}
+div#rmcRight>ul>li>a {
+	color: #fff;
+	/* 	border: 1px solid #08f; */
+	display: inline-block;
+	
+}
+
+				/* div#remocon 끝 */
+				/* 웹툰 뷰 이미지 */
+
+div#webViewMain {
+	width: 1200px;
+	text-align: center;
+	margin-top: 50px;
+}
+div#webViewMain>img {
+	width: 700px;
+	height: 2000px;
+}
+
+
+				/* 웹툰 뷰 이미지 끝 */
+				/* div#content 시작 */
+
+div#content {
+	margin: 20px 0 150px 0;
+	/* 	border: 2px solid #08f; */
+	justify-content: center;
+}
+
+div#content>div {
+	padding-top: 20px;
+	width: 180px;
+	height: 120px;
+	cursor: pointer;
+	border: 1px solid #aaa;
+	text-align: center;
+}
+
+div#content>div:nth-child(2) {
+	background-color: #fff;
+}
+
+div#content>div>p:last-child {
+	color: #aaa;
+}
+
+			/* div#content 끝 */
+
+
+
+			/* div#tagChk 시작 */
+
+div#tagChk {
+	
+	justify-content: space-between;
+}
+
+div#tagChk>div#tag>span {
+	border-radius: 6px;
+	background-color: #ddd;
+}
+
+div#tagChk span {
+	cursor: pointer;
+}
+					/* div#tagChk 끝 */
+hr#hr {
+	margin: 20px 0;
+}
+					/* div#venerTh 시작 */
+
+
+
+div#benerTh>div#bener {
+	height: 110px;
+	border: 1px solid #aaa;
+}
+
+div#benerTh>div#th {
+	border: 1px solid #aaa;
+	border-top: none;
+}
+
+div#th div#thList{
+	cursor: pointer;
+	margin: 50px 15px;	
+}
+
+div#th div#thList:hover{
+	text-decoration: underline
+}
+
+div#benerTh div#th img {
+	border: 1px solid #000;
+	width: 120px;
+	height: 80px;
+}
+
+div#bener{	
+	cursor: pointer;
+	padding: 20px;
+	border: 1px solid #aaa;
+	margin-top: 30px;
+}
+
+div#bener>img{
+	width: 180px;
+	height: 120px;
+}
+
+div#bener>div#txtArea>span,b{
+	 display: block;	
+}
+
+div#txtArea{
+	display: inline-block;
+}
+
+   			/* div#venerTh 끝 */
+
+
+/* div#writer 시작 */
+
+div#writer{
+	margin-top: 50px;
+	height: 150px;
+}
+
+div#writer>span.line:hover{
+	text-decoration: underline;
+	cursor : pointer;
+}
+
+div#writer p{
+	margin: 20px 0;
+}
+
+
+/* div#writer 끝 */
+
+
+/* div#reviews 시작*/
+
+/*//////////// noLoginTxt ///////////*/
+div#noLoginTxt{
+	padding: 20px;
+	border: 1px solid #aaa;	
+	margin: 15px 0;
+	color: #aaa;	
+	font-size: 13px;
+}
+
+div#noLoginTxt span{
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+
+/* noLoginTxt */
+
+div#reviews{
+/* 	border: 1px solid #000; */
+	width: 75%;	
+}
+
+div#reviews div#textArea{
+	margin-top: 10px;
+	padding:10px;
+	border: 1px solid #aaa;
+/* 	border-bottom: none; */
+}
+
+div#reviews textarea{	
+	border: none;
+	margin-top: 10px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+div#reviews div#textArea>span{
+	font-size: 15px;
+	color: #aaa;
+	display: inline-block;
+	transform:translateX(790px);
+}
+
+div#reviews div#btnArea1{
+	margin-left: 10px;
+	border: 1px solid #aaa;
+	border-top: none;
+	text-align: right;
+	margin-bottom: 80px;
+	
+}
+
+
+div#reviews div#btnArea1 button#reviewBtn{
+	border: none;
+	padding: 13px 22px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #00dc64;
+}
+
+div#bestReview{
+	margin-bottom: 20px;
+}
+
+div#viewWrap div#bestReview>span{
+	font-size: 15px;
+	cursor: pointer;
+}
+
+div#bestReview>span:nth-child(1){		
+	font-weight: bold;
+/* 	border: 1px solid #000; */
+}
+div.revText {
+	margin-top: 15px;
+}
+div.revText>* {
+	margin: 2px 0;
+	font-size: 16px;
+}
+div.revText>p {
+	color: #aaa;
+	font-size: 13px;
+}
+
+/* div#reviews 끝*/
+
+/*/// 관리자 댓글 삭제 ///*/
+div.revText{	
+	position: relative;
+}
+
+div.revText>span#reviewClo{
+	font-size: 20px;
+	cursor:pointer;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	display: none;
+}
+
+div.revText>span#reviewClo:hover{
+	font-weight: bold;
+	color: red;
+}
+
+/*/// 관리자 댓글 삭제 ///*/
+
+
+
+
+
+/* div#popup 시작 */
+
+div#popup{
+	display:none;
+	background-color: #eee;
+    position: absolute;
+    left: 913px;
+    top: 225px;    
+	padding: 20px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	width: 400px;
+	justify-content: space-around;
+}
+
+div#popup>h1{	
+	
+	font-size: 25px;
+	text-align: center;
+}
+
+div#popup>span{
+	cursor: pointer;
+	font-size: 40px;
+	display: inline-block;
+	transform : translate(340px, -60px);
+	
+}
+
+
+div#popup>div#iCon img{
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	width: 40px;
+	height: 40px;	
+}
+div#popup>div#iCon p{
+	font-size: 15px;
+}
+div#iCon div{
+	width: 70px;
+	margin: 3px;	
+	text-align: center;
+	cursor: pointer;
+}
+
+/* div#popup 끝 */
+
+/* div#modal 시작 */
+
+div#modalWrap{
+	display : none;
+	width: 100%;
+	height: 100%;
+	position : fixed;	
+	top : 0px;		
+	background-color: rgba(0,0,0,0.4);
+}
+
+div#modal{
+	position : absolute;
+	left : 50%;
+	top : 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #000;
+	width: 340px;
+}
+
+div#modal>h1{
+	text-align: center;
+}
+
+div#modal>span#modalClo{	
+	cursor: pointer;
+	font-size: 35px;
+	display: inline-block;
+	position : absolute;
+	left : 310px;
+	top : -10px;
+}
+
+div#modal div#star{
+	text-align: center;
+}
+
+div#modal div#star>span{
+	
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 50px;
+	height: 50px;
+	width: 50px;
+	border: 3px solid #00dc64;
+	background-color: #00dc64;
+	margin: 5px;
+	
+}
+
+div#modal span#info{
+	color: #aaa;
+	margin-left: 100px;
+}
+
+div#modal button{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px;
+	margin-top: 10px ;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	border-radius:5px ;
+}
+
+div#modal button:nth-child(1){
+	color: #fff;
+	background-color: #00dc64;
+}
+
+/* div#modal 끝 */
+
+/******************* 웹툰 뷰 페이지 끝 *****************/
+
+/******************* 로그인 관련 시작 *****************/
+
+/* 로그인 시작 */
+div#wrap.login {
+    width: 520px;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+div#wrap.login header#header {
+	text-align: center;
+	margin: 50px 0;
+}
+
+
+/* nav#loginGnb 시작 */
+div#wrap.login main#loginMain nav#loginGnb ul#loginMainMenu li.mainLi {
+	width: 162px;
+	font-size: 17px;
+	text-align: center;
+	padding: 10px 20px 12px;
+	display: inline-block;
+	position: relative;
+}
+
+div#wrap.login li.mainLi:nth-child(1) {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom: none;
+	z-index: 1;
+}
+
+div#wrap.login li.mainLi:nth-child(2) {
+	background-color: #eee;
+	margin-left: -5px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom-left-radius: 10px;
+}
+
+div#wrap.login li.mainLi:nth-child(2)>a {
+	color: #888;
+}
+
+div#wrap.login li.mainLi:nth-child(3) {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	border-top-right-radius: 10px;
+}
+
+div#wrap.login li.mainLi:nth-child(3)>a {
+	color: #888;
+}
+/* nav#loginGnb 끝 */
+
+/* 로그인 form 시작 */
+div#wrap.login main#loginMain form {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#wrap.login div#loginForm {
+	margin: 15px auto;
+}
+
+div#wrap.login div#loginForm input {
+	font-size: 17px;
+	padding: 15px 20px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+/* 아이디, 비밀번호 내용 삭제 아이콘 시작 */
+div#uidInsArea, div#upwInsArea {
+	width: 94%;
+	position: relative;
+	margin: 0 auto;
+}
+
+span#uidCloseIcon, span#upwCloseIcon {
+	width: 18px;
+	height: 18px;
+	line-height: 13px;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	background-color: #999;
+	border-radius: 50%;
+	display: inline-block;
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	cursor: pointer;
+}
+/* 아이디, 비밀번호 내용 삭제 아이콘 끝 */
+
+
+div#wrap.login div#loginForm input[type=text] {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: none;
+}
+
+div#wrap.login div#loginForm input[type=password] {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+div#wrap.login div#loginMgrArea {
+	margin: 10px;
+	justify-content: space-between;
+}
+
+div#wrap.login div#loginMgrArea label:hover {
+	cursor: pointer;
+}
+
+div#wrap.login div#loginMgrArea label img {
+	vertical-align: middle;
+}
+
+div#wrap.login div#loginMgrArea label span {
+	color: #888;
+	font-size: 14px;
+	margin-top: 4px;
+	display: inline-block;
+}
+
+div#ipSecurity img {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+div.alertMsg {
+	font-size: 13px;
+	color: #f00;
+	margin: 15px 15px 25px;
+	display: none;
+}
+
+div.alertMsg span {
+	font-size: 13px;
+	color: #f00;
+	font-weight: bold;
+}
+
+div#wrap.login div#btnArea {
+	margin: 18px auto 10px;
+}
+
+div#wrap.login div#btnArea button {
+	font-size: 17px;
+	padding: 14px;
+	display: block;
+	width: 94%;
+	margin: 0 auto;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+/* 로그인 form 끝 */
+
+/* nav#loginLnb 시작 */
+div#wrap.login nav#loginLnb {
+	margin: 20px auto 50px;
+}
+
+div#wrap.login nav#loginLnb ul#loginLnbMenu {
+	justify-content: center;
+}
+
+div#wrap.login nav#loginLnb ul#loginLnbMenu li.loginLnbLi {
+	color: #ccc;
+	margin: 0 10px;
+}
+
+div#wrap.login li.loginLnbLi>a {
+	color: #777;
+	font-size: 14px;
+	width: 90px;
+}
+/* nav#loginLnb 끝 */
+
+/* div#loginAddArea 시작 */
+div#wrap.login div#loginAddArea img {
+	margin: 10px auto;
+	width: 100%;
+}
+/* div#loginAddArea 끝 */
+
+/* footer#footer 시작 */
+div#wrap.login footer#footer {
+	margin-top: 30px;
+}
+
+div#wrap.login nav#footerLnb {
+	margin: 10px auto;
+}
+
+div#wrap.login nav#footerLnb  ul#footerLnbMenu {
+	justify-content: center;
+}
+
+div#wrap.login nav#footerLnb  ul#footerLnbMenu li.footerLnbLi {
+	color: #ccc;
+	margin: 0 3px;
+}
+
+div#wrap.login li.footerLnbLi>a {
+	color: #777;
+	font-size: 12px;
+	width: 90px;
+}
+
+div#wrap.login li.footerLnbLi:nth-child(3)>a {
+	font-weight: bold;
+}
+
+div#wrap.login div#footerCopy {
+	justify-content: center;
+}
+
+div#wrap.login div#footerCopy img {
+	transform: translateY(-2px);
+}
+
+div#wrap.login div#footerCopy span:nth-child(2) {
+	color: #888;
+	font-size: 12px;
+	margin-left: 3px;
+}
+
+div#wrap.login div#footerCopy span:nth-child(3) {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+div#wrap.login div#footerCopy span:nth-child(4) {
+	color: #888;
+	font-size: 12px;
+	margin-left: 3px;
+}
+/* footer#footer 끝 */
+/* 로그인 끝 */
+
+
+
+
+/* 회원가입 동의페이지 시작 */
+div#wrap.joinAgree {
+    width: 540px;
+    padding: 10px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 0 auto 100px;
+}
+
+div#wrap.joinAgree header#header {
+	margin-bottom: 30px;
+}
+
+/* div#wrap.joinAgree main#main 시작 */
+div#wrap.joinAgree label:hover {
+	cursor: pointer;	
+}
+
+div#wrap.joinAgree input.chkAgree {
+	width: 25px;
+	height: 25px;
+	accent-color: #09aa5c;
+	transform: translateY(5px);
+}
+
+div#wrap.joinAgree div#chkAllArea label span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+div#wrap.joinAgree div#chkAllArea>span {
+	color: #666;
+	font-size: 15px;
+	display: block;
+	margin: 15px 35px;
+}
+
+div#wrap.joinAgree div.agreeDiv span.agrTitle {
+	font-weight: bold;
+}
+
+div#wrap.joinAgree div.agreeDiv span.grnNd {
+	font-weight: bold;
+	font-size: 14px;
+	color: #09aa5c;
+}
+
+div#wrap.joinAgree div.agreeDiv span.gryCho {
+	font-weight: bold;
+	font-size: 14px;
+	color: #666;
+}
+
+div#wrap.joinAgree div.agreeDiv iframe {
+	width: 85%;
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	margin: 15px 40px 25px;
+	overflow: hidden;
+}
+
+div#wrap.joinAgree label#joinEventAgr {
+	margin: 15px 35px;
+	display: block;
+}
+
+div#wrap.joinAgree label#joinEventAgr input {
+	accent-color: #09aa5c;
+	border: none;
+}
+
+div#wrap.joinAgree label#joinEventAgr span {
+	color: #666;
+	font-size: 15px;
+}
+
+div#wrap.joinAgree div#notAgrMsg {
+	font-size: 13px;
+	color: #f00;
+	margin: 15px 30px 25px;
+	display: none;
+}
+/* div#wrap.joinAgree main#main 끝 */
+
+footer#joinAgreeFooter {
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+footer#joinAgreeFooter button#chkNextGray {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 520px;
+	margin: 0 auto;
+	background-color: #8990a0;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+}
+
+footer#joinAgreeFooter button#chkNextGrn {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 520px;
+	margin: 0 auto;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	display: none;
+}
+/* 회원가입 동의페이지 끝 */
+
+
+
+/* 회원가입 정보입력 페이지 시작 */
+div#wrap.joinBegin {
+    width: 540px;
+    padding: 10px;
+/*     border: 4px solid #aaa; */
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+div#wrap.joinBegin header#header {
+	margin-bottom: 40px;
+}
+
+/* form 영역 시작 */
+div#wrap.joinBegin #joinFormList {
+	margin: 10px;
+}
+
+div#wrap.joinBegin #joinItemUid {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUid img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUid input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemUpw {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUpw img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUpw input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemMail {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemMail img {
+	margin-right: 3px;
+}
+
+div#wrap.joinBegin #joinItemMail input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinFormIns {
+	margin: 15px 10px;
+}
+
+div#wrap.joinBegin #joinItemUname {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemUname img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemUname input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemBirth {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemBirth img {
+	width: 33px;
+	margin: 0 5px;
+}
+
+div#wrap.joinBegin #joinItemBirth input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemAgency {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom {
+	width: 210px;
+	border: 1px solid #bbb;
+	border-radius: 8px;
+	background-color: #fff;
+	position: absolute;
+	flex-wrap: wrap;
+	top: 40px;
+	left: 60px;
+	display: flex;
+}
+
+div#wrap.joinBegin #joinItemAgency ul#telecom li.telecomLi {
+	width: 100px;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 6px;
+}
+
+div#wrap.joinBegin #joinItemAgency>img {
+	width: 33px;
+	margin: 0 8px;
+}
+
+div#wrap.joinBegin #joinItemAgency span>img {
+	transform: translateY(4px);
+}
+
+div#wrap.joinBegin #joinItemAgency input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemAgency span.wideIcon {
+	transform: translateY(4px);
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemGenReg {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+	justify-content: space-between;
+}
+
+div#wrap.joinBegin #joinItemGenReg ul {
+	width: 230px;
+}
+
+div#wrap.joinBegin #joinItemGenReg li {
+	width: 50%;
+}
+
+div#wrap.joinBegin #joinItemGenReg label {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+	border: 1px solid #bbb;
+	padding: 4px 0;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin #joinItemGenReg li:nth-child(1) label {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+div#wrap.joinBegin #joinItemGenReg li:nth-child(2) label {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+div#wrap.joinBegin #joinItemGenReg label.selected {
+	border: 1px solid #09aa5c;
+}
+
+div#wrap.joinBegin #joinItemGenReg label.selected span {
+	color: #09aa5c;
+}
+
+div#wrap.joinBegin #joinItemGenReg label span {
+	font-size: 14px;
+	color: #888;
+}
+
+div#wrap.joinBegin #joinItemGenReg input[type=radio] {
+	display: none;
+}
+
+div#wrap.joinBegin #joinItemPhone {
+	padding: 10px;
+	border: 1px solid #bbb;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top: none;
+	height: 53px;
+}
+
+div#wrap.joinBegin #joinItemPhone img {
+	width: 33px;
+	margin: 0 8px;
+}
+
+div#wrap.joinBegin #joinItemPhone input {
+	width: 100%;
+	font-size: 17px;
+	padding: 4px;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div.errArea {
+	margin: 10px 15px;
+}
+
+div#wrap.joinBegin div.errArea ul.errMsg {
+	position: inside;	
+}
+
+div#wrap.joinBegin div.errArea li.errMsgLi {
+	color: #f00;
+	font-size: 13px;
+	list-style: disc inside;
+	margin: 3px;
+	display: none;
+}
+/* form 영역 끝 */
+
+/* div#agreeArea 시작 */
+div#wrap.joinBegin div#agreeArea {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 10px 10px 0;
+}
+
+div#wrap.joinBegin div#agrTitle {
+	margin-bottom: 15px;
+}
+
+div#wrap.joinBegin div#agrTitle label {
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#agrTitle input {
+	width: 25px;
+	height: 25px;
+	accent-color: #09aa5c;
+	transform: translateY(5px);
+}
+
+div#wrap.joinBegin div#agrTitle span#green {
+	color: #09aa5c;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+div#wrap.joinBegin div#agrTitle span#bold {
+	font-weight: bold;
+
+}
+
+div#wrap.joinBegin div#agrTitle span.wideIcon {
+	width: 52%;	
+	display: inline-block;
+	text-align: right;
+}
+
+div#wrap.joinBegin div#agrTitle span.wideIcon img {
+	transform: translateY(4px);
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#listArea {
+	border-top: 1px solid #ddd;
+	display: none;
+}
+
+div#wrap.joinBegin div#listArea ul#agreeMenu {
+	flex-wrap: wrap;
+	padding: 5px;
+	margin: 10px;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi {
+	width: 218px;
+	margin-bottom: 5px;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi label {
+	cursor: pointer;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi input {
+	margin-right: 5px;
+	accent-color: #09aa5c;
+}
+
+div#wrap.joinBegin div#listArea li.agreeLi span {
+	font-size: 14px;
+	color: #666;
+}
+div#wrap.joinBegin div.errArea p {
+	color: #f00;
+	font-size: 13px;
+	margin: 3px;
+	display: none;
+}
+/* div#agreeArea 끝 */
+
+footer#footer button#goJoinProc {
+	font-size: 20px;
+	padding: 14px;
+	display: block;
+	width: 496px;
+	margin: 30px auto 10px;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+/* 회원가입 정보입력 페이지 끝 */
+
+/******************* 로그인 관련 끝 *****************/
+
+/********************** 관리자 시작 *******************/
+div#managerWrap	{
+    width:	100%;
+    height: 550px;
+    padding: 20px;
+    
+    
+    margin: 20px auto;
+}
+
+/* 관리자 header 시작 */
+header#managerHeader {
+/* 	border: 1px solid #000; */
+	margin-left: 360px;
+	height: 60px;
+}
+
+header#managerHeader>h2 {
+/* 	border: 1px solid #000; */
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+header#managerHeader>ul.managerDate {
+/* 	border: 1px solid #000; */
+	margin-left: 500px;
+	
+	width: 250px;
+	height: 60px;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+header#managerHeader>ul.managerDate>li {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* 관리자 header 끝 */
+
+
+
+/* 관리자 main 시작 */
+main#managerMain {
+	width: 1200px;
+	margin-top: 10px;
+	/* 	border: 1px solid #000; */
+	margin-left: 360px;
+}
+
+main#managerMain>div#managerGNB {
+	width: 115px;
+	height: 310px;
+}
+
+main#managerMain>div#managerGNB>ul>li {
+	width: 115px;
+	height: 62px;
+	text-align: center;
+	padding-top: 15px;
+	align-items: center;
+	border-bottom: 1px solid #aaa;
+}
+
+main#managerMain>div#managerGNB>ul>li>a>b:hover {
+	cursor: pointer;
+	color: #00DC64;
+}
+
+main#managerMain>div#managerGNB>ul>li>a:hover {
+	cursor: pointer;
+	color: #00DC64;
+	font-size: bold;
+}
+
+main#managerMain>div#managerGNB>ul:nth-child(1) {
+	border-top: 1px solid #aaa;
+}
+
+main#managerMain>div#managerGNB>ul>li>a {
+/* 	border: 1px solid #000; */
+	color: #999;
+	font-size: 20px;
+}
+
+main#managerMain div#managerGraph {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+main#managerMain div#managerGraph>h2 {
+/* 	border: 1px solid #000; */
+	margin-bottom: 10px;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+main#managerMain div#managerGraph>img {
+	width: 1000px;
+	height: 240px;
+}
+/* 관리자 main 끝 */
+
+
+
+/* 관리자-회원정보 시작 */
+div#memberInfo {
+	width: 1000px;
+	height: 240px;
+/* 	border: 1px solid #000; */
+}
+
+div#memberInfo>ul.ListUL {
+	background-color: #00DC64;
+/* 	border: 1px solid #000; */
+	border-radius: 7px; 
+	justify-content: space-between;
+}
+
+div#memberInfo>ul.ListUL>li {
+	color: #fff;
+	font-size: 20px;
+/* 	border: 1px solid #000; */
+	
+	padding: 8px 30px;
+	font-weight: bold;
+}
+
+
+div#memberInfo>ul.ListUL>li:nth-child(1) {
+	width: 120px;
+	text-align: center;
+}
+
+div#memberInfo>ul.ListUL>li:nth-child(2) {
+	width: 130px;
+	text-align: center;
+}
+div#memberInfo>ul.ListUL>li:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+div#memberInfo>ul.ListUL>li:nth-child(4) {
+	flex: 1;
+	text-align: center;
+}
+div#memberInfo>ul.ListUL>li:nth-child(5) {
+	width: 150px;
+	text-align: center;
+}
+div#memberInfo>ul.ListUL>li:nth-child(6) {
+	width: 180px;
+	text-align: center;
+}
+
+
+
+div#memberInfo>ul.DBul {
+	border: 1px solid #aaa;
+	border-radius: 7px; 
+	justify-content: space-between;
+	transform: translateY(-1px);
+}
+
+div#memberInfo>ul.DBul>li {
+	font-size: 20px;
+	padding: 8px;
+}
+
+div#memberInfo>ul.DBul>li:nth-child(1) {
+	width: 120px;
+	text-align: center;
+}
+
+div#memberInfo>ul.DBul>li:nth-child(2) {
+	width: 130px;
+	text-align: center;
+}
+div#memberInfo>ul.DBul>li:nth-child(3) {
+	width: 150px;
+	text-align: center;
+}
+
+div#memberInfo>ul.DBul>li:nth-child(4) {
+	flex: 1;
+	text-align: center;
+}
+div#memberInfo>ul.DBul>li:nth-child(5) {
+	width: 150px;
+	text-align: center;
+}
+div#memberInfo>ul.DBul>li:nth-child(6) {
+	width: 180px;
+	text-align: center;
+}
+
+button#viewDetails {
+	width: 80px;
+	height: 40px;
+	margin-left: 1430px;
+	border-radius: 7px; 
+}
+/* 관리자-회원정보 끝 */
+
+
+
+/* 관리자-댓글 시작 */
+div#commentList {
+/* 	border: 1px solid #000; */
+	margin-left: 50px;
+}
+
+div#commentList h2 {
+	/* 	border: 1px solid #000; */
+	margin-bottom: 10px;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+div#commentInfo {
+	width: 1000px;
+/* 	border: 1px solid #000; */
+}
+
+div#commentInfo>ul.commentUL {
+	background-color: #00DC64;;
+/* 	border: 1px solid #000; */
+	border-radius: 7px; 
+	justify-content: space-between;
+}
+
+div#commentInfo>ul.commentUL>li {
+	color: #fff;
+	font-size: 20px;
+/* 	border: 1px solid #000; */
+	
+	padding: 8px 30px;
+	font-weight: bold;
+}
+
+div#commentInfo>ul.commentUL>li:nth-child(1) {
+	width: 140px;
+	text-align: center;
+}
+div#commentInfo>ul.commentUL>li:nth-child(2) {
+	flex: 1;
+	text-align: center;
+}
+div#commentInfo>ul.commentUL>li:nth-child(3) {
+	width: 160px;
+	text-align: center;
+}
+div#commentInfo>ul.commentUL>li:nth-child(4) {
+	width: 160px;
+	text-align: center;
+}
+div#commentInfo>ul.commentUL>li:nth-child(5) {
+	width: 140px;
+	text-align: center;
+}
+
+
+
+div#commentInfo>ul.commentDBul {
+	border: 1px solid #aaa;
+	border-radius: 7px; 
+	justify-content: space-between;
+	transform: translateY(-1px);
+}
+
+div#commentInfo>ul.commentDBul>li {
+	font-size: 20px;
+	padding: 8px;
+/* 	border: 1px solid #000; */
+}
+
+div#commentInfo>ul.commentDBul>li:nth-child(1) {
+	width: 140px;
+	text-align: center;
+}
+div#commentInfo>ul.commentDBul>li:nth-child(2) {
+	flex: 1;
+	text-align: center;
+}
+div#commentInfo>ul.commentDBul>li:nth-child(3) {
+	width: 160px;
+	text-align: center;
+}
+div#commentInfo>ul.commentDBul>li:nth-child(4) {
+	width: 160px;
+	text-align: center;
+}
+
+div#commentInfo>ul.commentDBul>li:nth-child(5) {
+	width: 140px;
+	text-align: center;
+	vertical-align: middle;
+}
+div#commentInfo>ul.commentDBul>li>button {
+	margin-top: 7px;
+	width: 60px;
+	font-size: 20px;
+	border-radius: 7px; 
+}
+
+/* 관리자-댓글 끝 */
+
+
+
+/* 관리자-조회수 시작 */
+div#managerViews {
+/* 	border: 1px solid #000; */
+	margin: 0 30px;
+}
+
+div#managerViews>img {
+    padding: 10px;
+}
+
+div#managerViews>h2 {
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+/* 관리자-조회수 끝 */
+div#uploadArea {
+	margin: 50px;
+}
+div#uploadArea>button {
+	
+	font-size: 20px;
+	padding: 14px;
+	width: 200px;
+	background-color: #09aa5c;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	border: 2px solid #09aa5c;
+	cursor: pointer;
+	margin: 5px;
+}
+div#uploadArea>button:hover {
+	color: #09aa5c;
+	border: 2px solid #09aa5c;
+	background-color: #fff;
+	border-radius: 10px;
+}
+/********************** 관리자 끝 *******************/
+
+/********************** 내 정보 페이지 *******************/
+
+
+/* 내정보 페이지 시작 */
+div#wrap.myInfoPage {
+    padding: 0 0 10px;
+}
+div#infoHead {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: #00c73c;
+	z-index: -1;
+}
+div#wrap.myInfoPage header#header {
+	height: 60px;
+	background-color: #00c73c;
+}
+div#wrap.myInfoPage header#header #infoHeader {
+	width: 950px;
+	margin: 0 auto;
+}
+div#wrap.myInfoPage header#header img {
+	width: 40px;
+	transform: translateY(8px);
+}
+
+div#wrap.myInfoPage header#header h2 {
+	color: #fff;
+	font-weight: normal;
+	line-height: 60px;
+	margin-left: 15px;
+}
+
+div#wrap.myInfoPage main#main {
+	width: 950px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+div#wrap.myInfoPage main#main h2 {
+	margin-bottom: 30px;
+}
+
+div#wrap.myInfoPage main#main section {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+div#wrap.myInfoPage main#main section div {
+	height: 100px;
+	padding: 20px 20px 0;
+	border-bottom: 1px solid #aaa;
+}
+
+div#wrap.myInfoPage main#main section div#phonePrn {
+	border-bottom: none;
+}
+
+div#wrap.myInfoPage main#main section div>span:first-child {
+	width: 200px;
+	color: #444;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+div#wrap.myInfoPage main#main section div#memPWPrn form {
+	display: inline;
+}
+
+div#wrap.myInfoPage main#main section button#pwModBtn {
+	width: 120px;
+	padding: 4px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #888;
+	border: 1px solid #888;
+	border-radius: 6px;
+}
+
+div#wrap.myInfoPage main#main section button#pwModBtn:hover {
+	color: #888;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+div#wrap.myInfoPage main#main section div input[type=text] {
+	font-size: 18px;
+	padding: 4px 6px;
+}
+
+div#wrap.myInfoPage main#main section div select {
+	font-size: 18px;
+	padding: 4px 6px;
+	margin-right: 10px;
+}
+
+div#wrap.myInfoPage main#main section div label {
+	margin: 0 17px;
+	cursor: pointer;
+}
+
+div#wrap.myInfoPage main#main section div input[type=radio] {
+	width: 18px;
+	height: 18px;
+	transform: translateY(2px);
+	accent-color: #09aa5c;
+}
+
+div#wrap.myInfoPage main#main section div input[type=radio]+span {
+	font-size: 18px;
+	padding: 4px 6px;
+}
+
+div#wrap.myInfoPage main#main section div p {
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 210px;
+}
+
+div#wrap.myInfoPage footer#footer {
+	width: 950px;
+	padding: 20px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+div#wrap.myInfoPage footer#footer button {
+	width: 150px;
+	padding: 4px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #888;
+	border: 1px solid #888;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+div#wrap.myInfoPage footer#footer button:hover {
+	color: #888;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+/* 내정보 페이지 끝 */
+
+/* 비밀번호 변경 페이지 시작 */
+div#wrap.memPWMod {
+    padding: 0 0 10px;
+}
+
+div#wrap.memPWMod header#header {
+	height: 60px;
+	background-color: #00c73c;
+}
+div#wrap.memPWMod header#header #infoHeader {
+	width: 950px;
+	margin: 0 auto;
+}
+div#wrap.memPWMod header#header img {
+	width: 40px;
+	transform: translateY(8px);
+}
+
+div#wrap.memPWMod header#header h2 {
+	color: #fff;
+	font-weight: normal;
+	line-height: 60px;
+	margin-left: 15px;
+}
+
+div#wrap.memPWMod main#main {
+	width: 950px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+div#wrap.memPWMod main#main h2 {
+	margin-bottom: 30px;
+}
+
+div#wrap.memPWMod main#main section {
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+div#wrap.memPWMod main#main section label {
+	padding: 30px 20px;
+	height: 120px;
+	border-bottom: 1px solid #aaa;
+	display: block;
+}
+
+div#wrap.memPWMod main#main section label span:first-child {
+	width: 200px;
+	color: #444;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+div#wrap.memPWMod main#main section form input {
+	font-size: 18px;
+	padding: 4px 6px;
+}
+
+
+div#wrap.memPWMod main#main section span:nth-child(3) {
+	padding: 5px 15px;
+	margin-left: 195px;
+	display: block;
+}
+
+div#wrap.memPWMod main#main section div#memPWModBtnArea {
+	height: 120px;
+	text-align: center;
+}
+
+div#wrap.memPWMod main#main section div button {
+	width: 120px;
+	padding: 4px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #888;
+	border: 1px solid #888;
+	border-radius: 6px;
+	margin-top: 40px;
+}
+
+div#wrap.memPWMod main#main section div button:hover {
+	color: #888;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+div#wrap.memPWMod footer#footer {
+	width: 950px;
+	padding: 20px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+div#wrap.memPWMod footer#footer button#memDelBtn {
+	width: 150px;
+	padding: 4px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #888;
+	border: 1px solid #888;
+	border-radius: 6px;
+	display: inline-block;
+}
+
+div#wrap.memPWMod footer#footer button#memDelBtn:hover {
+	color: #888;
+	font-weight: bold;
+	background-color: #fff;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+/* 비밀번호 변경 페이지 끝 */
+
+/****************** 공지사항 ******************/
+/* noticeWrite 글쓰기 */
+div#wraping {
+    width: 1200px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+div.no1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.no1 a {
+    border-radius: 6px;
+    margin-left: 10px;
+    background-color: #b6e2ca;
+}
+
+div#wraping hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div.no2 input {
+    width: 900px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 24px;
+    padding: 5px;
+}
+
+div.no3 {
+    width: 500px;
+    height: 100px;
+    border: 1px solid #aaa;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 8px;
+
+}
+
+div.no3 select {
+	width: 200px;
+	height: 30px;
+}
+
+div.no4 {
+	margin-top: 30px;
+    width: 900px;
+    height: 450px;
+    border: 1px solid #aaa;
+}
+div.no4>textarea#ntW {
+	width: 900px;
+	height: 450px;
+	font-size: 18px;
+	padding: 4px;
+}
+
+div.reg button.dddd1 {
+	width: 100px;
+	background-color: white;
+	padding: 8px;
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	font-weight: bold;
+	margin-right: 6px;
+	cursor: pointer;
+}
+div.reg button.plz {
+	background-color: #03C75A1F;
+	color : #009F47;
+	border: 1px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 8px;
+	
+}
+/* noticeWrite 글쓰기 종료 */
+/********************    공지사항 리스트 영역    ****************/
+div#wrap {
+	width: 1200px;
+
+	}
+#noticelistMain {
+   padding-top: 20px;
+   height: 1000px;
+}
+#noticelistMain>#noticeArea {
+   
+   width: 900px;
+}
+#noticelistMain>#noticeArea>#noticeHeader {
+      justify-content: space-between;
+}
+#noticelistMain>#noticeArea>#noticeHeader>input {
+   width: 350px;
+   font-size: 18px;
+   text-indent: 10px;
+}
+#noticelistMain>#noticeArea>hr {
+   margin-top: 20px;
+}
+#noticelistMain>#noticeArea>#noticeMain>table {
+   width: 100%;
+   border-bottom: 1px solid #000;
+   border-collapse: collapse;
+   font-size: 20px;
+   
+}
+#noticelistMain>#noticeArea>#noticeMain>table td, th{
+   border-bottom: 1px solid #000;
+}
+#noticelistMain>#noticeArea>#noticeMain>table td {
+   padding: 10px 0;
+}
+
+#noticelistMain>#noticeArea>#noticeMain>table th {
+   width: 150px;
+}
+#noticelistMain>#noticeArea>#noticeMain>table .noticeTitleName {
+   flex:1;
+}
+#noticelistMain>#noticeArea>#noticeMain>table .noticeTitleName:hover {
+   cursor: pointer;
+   text-decoration: underline;
+   text-decoration-skip-ink: none;
+}
+#noticelistMain>#noticeArea>#noticeMain>table .noticeTitleTM {
+   width: 150px;
+}
+#noticelistMain>#noticeArea>#noticeMain>table>tbody>#noticeTitle>td {
+   text-align: center;
+}
+#noticelistMain>#noticeArea>#noticeMain>table>tbody>tr>td:last-child{
+   text-align: center;
+   
+}
+#noticelistMain>#noticeArea>#pagenum {
+   
+   text-align: center;
+   justify-content: center;
+}
+#noticelistMain>#noticeArea>#pagenum>ul {
+   margin-top: 20px;
+   width: 100%;
+   justify-content: center;
+}
+#noticelistMain>#noticeArea>#pagenum>ul>li {
+   margin: 3px 5px;
+   font-size: 18px;
+}
+#noticelistMain>#noticeArea>#pagenum>ul>li:hover {
+   cursor: pointer;
+}
+#noticelistMain>#side {
+   
+   flex:1;
+   
+}
+
+
+
+
+/************ 공지사항 리스트 페이지 끝 ***************/
+/* 공지사항 클릭페이지 시작 */
+div#noticewrap {
+    width: 1200px;
+    padding: 10px;
+    margin: 10px auto;
+}
+div#noticeWrap2 {
+	margin: 20px auto;
+	width: 1200px;
+}
+
+div#notiwrap {
+    display: flex;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+div.not2 span {
+	color: #9fa09f;
+	
+}
+div.not2 h2 {
+	margin-bottom: 10px;
+}
+
+div#noticewrap hr {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-color: #ebebeb;
+}
+
+div.notii {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+   
+}
+
+div.contentsntc p.font2 {
+    color: #9fa09f;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+div.contentsntc {
+	justify-content: space-between;
+	display: flex;
+}
+
+
+
+div.not3>p.fontW {
+	height: 700px;
+}
+
+    
+div.notii div.contentsntc a:hover {
+	cursor: poniter;
+	text-decoration: underline;
+	
+}
+
+div.mokrok {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div#gongangarea {
+    width: 800px;
+    height: 800px;
+}
+
+div#footerarea {
+    /* border: 1px solid #000; */
+    width: 1150px;
+}
+
+div#notice2wrap div#artclearea {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+div#notice2wrap div#webtoonarea {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+div#notice2wrap div#area {
+    width: 300px;
+    height: 400px;
+}
+
+/* 공지사항 클릭페이지 끝 */
